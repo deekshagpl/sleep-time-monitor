@@ -4,143 +4,160 @@
     <meta charset="utf-8">
 
     <title>sleepytime bedtime calculator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./index.js"></script>
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-lightblue">
-        
-        
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              
-              <li class="nav-item active">
-                <a class="nav-link" href="#">How Calculator Works</a>
-              </li>
-              
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Benefits of good Sleep</a>
-            </li>
-            
-            
-          </ul>
-          
-        </div>
-      </nav>
-  <div class="container" id="content">
+<body class="bg-dark text-info">
+    <div class="container" id="content">
         <div class="row">
             <div class="col-12">
-                <h3 style="text-align: center; margin-top: 10px;">sleepytime</h3>
-                <div id="start">
-                    <p><span style="font-size: 125%;">I have to wake up at...</span><br />
-                        <div style="text-align: center;">
-                            <select id="hour" style="background-color: #2a2438;">
-                                <option>(hour)</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                            </select>
-                            <select id="minute" style="background-color: #2a2438;">
-                                <option>(minute)</option>
-                                <option>00</option>
-                                <option>05</option>
-                                <option>10</option>
-                                <option>15</option>
-                                <option>20</option>
-                                <option>25</option>
-                                <option>30</option>
-                                <option>35</option>
-                                <option>40</option>
-                                <option>45</option>
-                                <option>50</option>
-                                <option>55</option>
-                            </select>
-                            <select id="ampm" style="background-color: #2a2438;">
-                                <option>AM</option>
-                                <option>PM</option>
-                            </select>
-                            <br />
-                            <!--<input type="time" id="appt" name="appt" required>-->
-                            <br />
-                            <button id="calculate">calculate</button>
+                <h1 class="p-5 mb-4 bg-dark rounded-3">
+                    <span class="">
+                        <svg width="100" viewBox="0 0 187.852 187.852" enable-background="new 0 0 187.852 187.852">
+                            <g>
+                                <path fill="#0DCAF0"
+                                    d="m185.975,75.172c-0.661-3.247-3.826-5.339-7.077-4.682-0.432,0.088-0.843,0.223-1.23,0.395-2.524,1.115-4.025,3.867-3.452,6.682 6.364,31.255-6.146,63.636-31.873,82.495-17.538,12.856-39.179,18.089-60.937,14.739-21.758-3.352-40.821-14.856-53.677-32.395-26.73-36.468-18.81-87.883 17.656-114.615 17.538-12.855 39.18-18.088 60.937-14.739 21.13,3.255 39.701,14.217 52.531,30.91l-5.516-.793c-3.283-0.474-6.322,1.805-6.793,5.085-0.472,3.28 1.805,6.321 5.085,6.793l19.915,2.864c0.132,0.019 0.262,0.018 0.394,0.028 0.156,0.012 0.313,0.034 0.468,0.034 2.936,0 5.501-2.157 5.932-5.147l2.864-19.915c0.472-3.28-1.805-6.321-5.085-6.793-3.281-0.473-6.321,1.805-6.793,5.085l-.811,5.639c-14.725-19.262-36.074-31.909-60.363-35.65-24.925-3.842-49.735,2.17-69.858,16.92-20.124,14.753-33.322,36.604-37.161,61.529-3.839,24.926 2.169,49.735 16.921,69.859 14.751,20.123 36.602,33.32 61.528,37.16 4.914,0.757 9.821,1.131 14.691,1.131 19.833,0 39.012-6.209 55.167-18.052 29.49-21.618 43.832-58.738 36.537-94.567z" />
+                                <path fill="#0DCAF0"
+                                    d="m126.601,96.171h-20.48c-1.502-3.399-4.234-6.132-7.633-7.633v-46.034c0-3.313-2.687-6-6-6s-6,2.687-6,6v46.034c-5.236,2.314-8.904,7.55-8.904,13.633 0,8.218 6.686,14.904 14.904,14.904 6.083,0 11.319-3.668 13.633-8.904h20.48c3.313,0 6-2.687 6-6s-2.687-6-6-6zm-37.018,6c0-1.602 1.303-2.905 2.904-2.905s2.905,1.303 2.905,2.905-1.303,2.904-2.905,2.904-2.904-1.303-2.904-2.904z" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="text-right">
+                        <span>Sleepy Time</span>
+                        <svg width="50" viewBox="0 0 76 76" enable-background="new 0 0 76.00 76.00">
+                            <path fill="#0DCAF0" fill="#0DCAF0" fill-opacity="1" stroke-width="0.2"
+                                stroke-linejoin="round"
+                                d="M 42.2658,42.6939L 42.2658,39.7306L 53.6919,23.4539L 53.6919,23.3139L 43.298,23.3139L 43.298,18.7605L 60.7042,18.7605L 60.7042,21.9407L 49.5272,38L 49.5272,38.1405L 60.8831,38.1405L 60.8831,42.6939L 42.2658,42.6939 Z M 27.6278,50.6304L 27.6278,48.713L 35.0212,38.181L 35.0212,38.0904L 28.2958,38.0904L 28.2958,35.1441L 39.5586,35.1441L 39.5586,37.2018L 32.3264,47.5931L 32.3264,47.6841L 39.6744,47.6841L 39.6744,50.6304L 27.6278,50.6304 Z M 15.5589,56.9736L 15.5589,55.5791L 20.9359,47.9195L 20.9359,47.8536L 16.0447,47.8536L 16.0447,45.7108L 24.2358,45.7108L 24.2358,47.2074L 18.976,54.7647L 18.976,54.8308L 24.32,54.8308L 24.32,56.9736L 15.5589,56.9736 Z " />
+                        </svg>
+                    </span>
+                </h1>
+                <nav class="navbar navbar-expand-lg navbar-light bg-info">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">How Calculator Works</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Benefits of good Sleep</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid my-4" id="start">
+                    <div class="container">
+                        <p class="display-6">I have to wake up at...</p>
+                        <div class="row col-4 mx-auto">
+                            <div class="col">
+                                <select id="hour" class="form-select form-select-sm">
+                                    <option selected>hour</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select id="minute" class="form-select form-select-sm">
+                                    <option selected>minute</option>
+                                    <option>00</option>
+                                    <option>05</option>
+                                    <option>10</option>
+                                    <option>15</option>
+                                    <option>20</option>
+                                    <option>25</option>
+                                    <option>30</option>
+                                    <option>35</option>
+                                    <option>40</option>
+                                    <option>45</option>
+                                    <option>50</option>
+                                    <option>55</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select id="ampm" class="form-select form-select-sm">
+                                    <option>AM</option>
+                                    <option>PM</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-outline-info btn-sm my-4" id="calculate">calculate</button>
                         </div>
+                    </div>
+                    <div class="text-center my-5 display-5"><i>or</i></div>
+                    <div class="container my-4">
+                        <div class="display-6">Find out when to get up if you go to bed now</div>
+                        <center class="my-4">
+                            <button class="btn btn-info btn-lg" id="zzz">zzz</button>
+                        </center>
+                    </div>
+                </div>
 
-                    </p>
-                    <p style="text-align: center; font-size: 125%;"><i>or</i></p>
-                    <p><span style="font-size: 125%;">Find out when to get up if you go to bed now</span></p>
-                    <center>
-                        <button id="zzz">zzz</button>
-                        <br /><br /><br /><br /><br />
-                    </center>
-                </div> <!-- end #start -->
-                <div id="results" style="display:none;">
-                    <p style="font-size: 150%">You should try to <b>fall asleep</b> at one of the following times:</p>
-                    <span id="result1" style="font-size: 300%; color: rgb(1, 223, 116);"
-                        title="Six Cycles: Nine Hours of Sleep"></span> <i style="font-size: 200%;">or </i>
-                    <span id="result2" style="font-size: 300%; color: rgb(1, 223, 116);"
-                        title="Five Cycles: Seven and a half Hours of Sleep"></span> <i style="font-size: 200%;">or </i>
-                    <span id="result3" style="font-size: 300%; color: rgb(1, 223, 116);"
-                        title="Four Cycles: Six Hours of Sleep"></span> <i style="font-size: 200%;">or </i>
-                    <span id="result4" style="font-size: 300%; color: rgb(1, 223, 116);"
+                
+                <div id="results" style="display: none;">
+                    <p class="display-6">You should try to <b>fall asleep</b> at one of the following times:</p>
+                    <span id="result1" class="display-4" style="color: #B3E5FC"
+                        title="Six Cycles: Nine Hours of Sleep"></span>
+                        <span class="font-italic"> or </span>
+                    <span id="result2" class="display-4" style="color: #4FC3F7"
+                        title="Five Cycles: Seven and a half Hours of Sleep"></span>
+                        <span class="font-italic"> or </span>
+                    <span id="result3" class="display-4" style="color: #03A9F4"
+                        title="Four Cycles: Six Hours of Sleep"></span>
+                        <span class="font-italic"> or </span>
+                    <span id="result4" class="display-4" style="color: #0288D1"
                         title="Three Cycles: Four and a half Hours of Sleep"></span>
-                    <p style="margin-top: 1em; font-size: 150%; color: rgb(0, 128, 255);">Please keep in mind that you
+                    <p class="display-6 my-5">Please keep in mind that you
                         should be <b>falling asleep</b> at these times.</p>
-                    <p style="font-size: 150%; color: rgb(0, 128, 255);">The average human takes <b>fourteen minutes</b>
+                    <p class="display-6 my-5">The average human takes <b>fourteen minutes</b>
                         to
                         fall asleep, so plan accordingly!</p>
-                    <p style="font-size: 150%; color: rgb(153, 102, 204);">sleepytime works by counting backwards in
-                        <b>sleep cycles</b>. Waking up in the middle of a sleep cycle leaves you feeling tired and
-                        groggy,
-                        but waking up <i>in between</i> cycles wakes you up feeling refreshed and alert!</p>
-                    <center><a class="back" href="#" style="font-size: 200%;">back</a><br />
+                    <center>
+                        <a class="back btn btn-outline-info btn-lg btn-block" href="#" >Back</a>
                     </center>
-                </div><!-- end results -->
+                </div>
+
+
                 <div id="resultsNow" style="display:none;">
-                    <p style="font-size: 150%">It takes the average human <b>fourteen minutes</b> to fall asleep.</p>
-                    <p style="font-size: 150%">If you head to bed right now, you should try to wake up at one of the
+                    <p class="display-6">It takes the average human <b>fourteen minutes</b> to fall asleep.</p>
+                    <p class="display-6">If you head to bed right now, you should try to wake up at one of the
                         following times:</p>
-                    <span id="resultNow1" style="font-size: 300%; color: rgb(168, 39, 254);"
-                        title="One Cycle: One and a half Hours of Sleep"></span> <i style="font-size: 150%;">&nbsp;or
-                    </i>
-                    <span id="resultNow2" style="font-size: 300%; color: rgb(154, 3, 254);"
-                        title="Two Cycles: Three Hours of Sleep"></span> <i style="font-size: 150%;">&nbsp;or </i>
-                    <span id="resultNow3" style="font-size: 300%; color: rgb(150, 105, 254);"
-                        title="Three Cycles: Four and a half Hours of Sleep"></span> <i
-                        style="font-size: 150%;">&nbsp;or
-                    </i>
-                    <span id="resultNow4" style="font-size: 300%; color: rgb(140, 140, 255);"
-                        title="Four Cycles: Six Hours of Sleep"></span> <i style="font-size: 150%;">&nbsp;or </i>
-                    <span id="resultNow5" style="font-size: 300%; color: rgb(187, 187, 255);"
-                        title="Five Cycles: Seven and a half Hours of Sleep"></span> <i
-                        style="font-size: 150%;">&nbsp;or
-                    </i>
-                    <span id="resultNow6" style="font-size: 300%; color: rgb(143, 254, 221);"
-                        title="Six Cycles: Nine Hours of Sleep"></span>
-                    <p style="margin-top: 1em; font-size: 150%; color: rgb(0, 128, 255);">A good night's sleep consists
+                    <span id="resultNow1" class="display-4" style="color: #039BE5" title="One Cycle: One and a half Hours of Sleep"></span>
+                    <span class="font-italic"> or </span>
+                    <span id="resultNow2" class="display-4" style="color: #03A9F4" title="Two Cycles: Three Hours of Sleep"></span>
+                    <span class="font-italic"> or </span>
+                    <span id="resultNow3" class="display-4" style="color: #29B6F6" title="Three Cycles: Four and a half Hours of Sleep"></span>
+                    <span class="font-italic"> or </span>
+                    <span id="resultNow4" class="display-4" style="color: #4FC3F7" title="Four Cycles: Six Hours of Sleep"></span>
+                    <span class="font-italic"> or </span>
+                    <span id="resultNow5" class="display-4" style="color: #81D4FA" title="Five Cycles: Seven and a half Hours of Sleep"></span>
+                    <span class="font-italic"> or </span>
+                    <span id="resultNow6" class="display-4" style="color: #B3E5FC" title="Six Cycles: Nine Hours of Sleep"></span>
+                    <p class="display-6">A good night's sleep consists
                         of
                         5-6 complete sleep cycles.</p>
-                    <center><a class="back" href="#" style="font-size: 200%;">back</a><br />
+                    <center>
+                        <a class="back btn btn-outline-info btn-lg btn-block" href="#">Back</a>
                     </center>
-                </div> <!-- end resultsNow -->
+                </div>
             </div>
-        </div> <!-- end row -->
+        </div>
 
 </body>
 

@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function () {
     $('.back').click(function () {
         $('#start').fadeIn();
@@ -7,7 +9,7 @@ $(document).ready(function () {
     });
 
     $('#calculate').click(function () {
-        if ($('#hour').val() != '(hour)' && $('#minute').val() != '(minute)') {
+        if ($('#hour').val() != 'hour' && $('#minute').val() != 'minute') {
             $('#start').hide();
             var setTime = new Date();
 
