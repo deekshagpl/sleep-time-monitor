@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	     <meta charset="utf-8">
+         <title>ABOUT US</title>
+		 	</head>
+	<body style="background-color: #2a2438;">
+		   <font color= "lightblue">
+	       <center><h1>ABOUT US</h1></center>
+		   <center><h3>
+		   Sleepytime helps you figure out when to go to sleep and when to wake up, by estimating sleep cycles based on 90 minutes each.
+		   To put it simply, a sleep cycle is what your brain does while you’re getting your zzz’s.
+		   As you sleep, your brain goes through various patterns of activity. 
+		   These patterns are based on distinct eye movements and muscle activity. 
+		   In fact, sleep scientists have tracked these movements and found two main sleep cycle categories:rapid-eye-movement (REM) sleep and non-rapid-eye-movement (NREM) sleep.
+		   </h3></center>
+		 
+		   <h3>Sleepytime helps you figure out when to go to sleep and when to wake up, by estimating sleep cycles based on 90 minutes each.
+		   To put HOW LONG IS A SLEEP CYCLE?</h3>
+		   
+           <h1><center>  Your natural sleep cycle lasts about 90 minutes. During this time your brain moves through five different stages.</center></h1>
+		   <p>
+		   <ol>
+		   <h3>
+		   <li>Your brain begins to slow down. You are lightly sleeping, drifting in and out.</li>
+           <li>Your eye movement stops and the brain begins to relax. This is a period of light sleep before you enter a deep sleep.</li>
+		   <li>Your brain waves begin to slow even more. They are preparing for the deepest stages of sleep.</li>
+           <li>This is the deepest stage of sleep. It’s important for you to reach this stage for a good night’s sleep and it’s also important that you are not awoken during this stage. That will make for a very grouchy morning.</li>
+           <li>This is the rapid-eye-movement (REM) stage of sleep. Most of your dreaming occurs during this time. Again, make sure you are not awoken during this stage because you will likely feel disoriented.</li>
+		   </h3>
+		   </ol>
+		   </p>
+		   </font>
+	</body>
+</html>
